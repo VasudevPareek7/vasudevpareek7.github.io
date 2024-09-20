@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Hut - Your Friendly Neighborhood Dental Clinic in Ludhiana</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5a9bd5; /* Soft blue */
+            --secondary-color: #4a4a4a;
+            --accent-color: #ffd966; /* Soft gold */
+            --background-color: #f8f8f8;
+            --text-color: #333333;
+            --light-gray: #e0e0e0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 1rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 40px 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 48%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .feature {
+            flex-basis: 30%;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .dentist-cards {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+        .dentist-card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 45%;
+            transition: all 0.3s ease;
+        }
+        .dentist-card:hover {
+            transform: translateY(-5px);
+        }
+        .dentist-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        .dentist-card p {
+            margin: 5px 0;
+            color: var(--secondary-color);
+        }
+        #phonePopup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        #phonePopup p {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        #phonePopup a {
+            display: block;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        #phonePopup a:hover {
+            background-color: var(--secondary-color);
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        #services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #services li {
+            background-color: var(--light-gray);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        #services li:hover {
+            background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="DALL·E 2024-09-20 01.16.29 - A modern, sleek dental logo for 'DentalHut'. The logo should feature a tooth icon integrated with the concept of a hut or house, representing comfort .webp" alt="Dental Hut Logo" class="logo">
+        <h1>Welcome to Dental Hut</h1>
+        <p>Where Smiles Grow Brighter in Ludhiana</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Dental Hut</h2>
+            <p>At Dental Hut, located in the heart of Moti Nagar, Ludhiana, we believe in creating a warm, inviting atmosphere that makes dental care a pleasant experience for all our patients. Our unique blend of professional expertise and friendly ambiance ensures that your visit is comfortable and stress-free.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Our Clinic</h2>
+            <div class="gallery">
+                <img src="clinic1.jpg" alt="Dental chair with artistic wall decor">
+                <img src="Clinic2.jpg" alt="Welcoming waiting area">
+            </div>
+        </section>
+
+        <section id="dentists">
+            <h2>Meet Our Dentists</h2>
+            <div class="dentist-cards">
+                <div class="dentist-card">
+                    <h3>Dr. Ashlesha Pareek</h3>
+                    <p>B.D.S</p>
+                    <p>F.M.C</p>
+                    <p>Phone: 77268-28245</p>
+                </div>
+                <div class="dentist-card">
+                    <h3>Dr. Ankur Pareek</h3>
+                    <p>B.D.S</p>
+                    <p>M.D.S (Endodontist)</p>
+                    <p>Phone: 95929-03370</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2>Why Choose Dental Hut</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Fun and Friendly Environment</h3>
+                    <p>Our clinic features unique wall art and a playful atmosphere, making dental visits enjoyable for patients of all ages.</p>
+                </div>
+                <div class="feature">
+                    <h3>State-of-the-Art Equipment</h3>
+                    <p>We use the latest dental technology to ensure efficient, comfortable, and top-quality treatments.</p>
+                </div>
+                <div class="feature">
+                    <h3>Convenient Location</h3>
+                    <p>Easily accessible in Moti Nagar, opposite Singh Sabha Gurudwara Sahib.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>General Dentistry</li>
+                <li>Cosmetic Dentistry</li>
+                <li>Pediatric Dentistry</li>
+                <li>Orthodontics</li>
+                <li>Preventive Care</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Visit Dental Hut</h2>
+            <p>Schedule your appointment today and experience our unique approach to dental care!</p>
+            <h3>Our Location:</h3>
+            <p>23-C/1, Opposite Singh Sabha Gurudwara Sahib,<br>
+            Block C, Moti Nagar,<br>
+            Ludhiana, Punjab 141010</p>
+            <a href="#" class="btn" id="bookVisitBtn">Book Your Visit</a>
+        </section>
+    </div>
+
+    <div id="phonePopup">
+        <p>Call us to book your appointment:</p>
+        <a href="tel:7726828245">Dr. Ashlesha Pareek: 77268-28245</a>
+        <a href="tel:9592903370">Dr. Ankur Pareek: 95929-03370</a>
+    </div>
+
+    <script>
+        document.getElementById('bookVisitBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('phonePopup').style.display = 'block';
+        });
+
+        document.addEventListener('click', function(e) {
+            if (e.target.id !== 'bookVisitBtn' && !e.target.closest('#phonePopup')) {
+                document.getElementById('phonePopup').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
